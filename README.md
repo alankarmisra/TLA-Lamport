@@ -1,3 +1,5 @@
+[Note: The following repo is work in progress as I follow along the video course myself]
+
 # Specifications for Leslie Lamport's TLA+ Video Course.
 
 I made this repo for anyone following along the video course on YouTube for one easy download. 
