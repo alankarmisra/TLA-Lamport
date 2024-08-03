@@ -9,8 +9,14 @@ https://www.youtube.com/playlist?list=PLWAv2Etpa7AOAwkreYImYt0gIpOdWQevD
 
 ## Opening the toolbox in the ToolBox IDE
 I don't know about other platforms but on the Mac the open command seems broken. Instead, a very counter-intuitive way is to use 
+```bash
 Open Spec -> Add New Spec...
-Browse to the folder where the .tla file is and then double click the tla file to have the same name appear in the Save as... field (or type it in). This will give you a warning saying it will replace the .tla file. It actually won't replace the file at all, so go ahead and click ok. This will then "open" the toolbox including the models.
+```
+Browse to the folder where the .tla file is and then double click the tla file to have the same name appear in the Save as... field (or type it in). This will give you a warning saying it will replace the .tla file. 
+
+_It actually won't replace the file at all_, so go ahead and confirm. 
+
+This will then open the toolbox including the models.
 
 
 The original video course along with errata is available at: 
