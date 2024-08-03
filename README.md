@@ -2,7 +2,7 @@
 
 # Specifications for Leslie Lamport's TLA+ Video Course.
 
-I made this repo for anyone following along the video course on YouTube for one easy download. 
+I made this repo for anyone following along with the video course on YouTube for one easy download. 
 The play list for the video course is available at:
 
 https://www.youtube.com/playlist?list=PLWAv2Etpa7AOAwkreYImYt0gIpOdWQevD
