@@ -4,7 +4,7 @@ VARIABLES i, pc
 
 Init == (pc = "start") /\ (i = 0)
 
-Pick == /\ pc = "start"
+Pick == /\ pc = "start" 
         /\ i' \in 0..1000
         /\ pc' = "middle"
            
@@ -16,5 +16,5 @@ Next == Pick \/ Add1
 
 =============================================================================
 \* Modification History
-\* Last modified Sat Aug 03 15:13:17 WITA 2024 by alankar
+\* Last modified Sat Aug 03 15:17:14 WITA 2024 by alankar
 \* Created Sat Aug 03 14:48:31 WITA 2024 by alankar
