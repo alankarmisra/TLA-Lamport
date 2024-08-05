@@ -25,7 +25,7 @@ https://lamport.azurewebsites.net/video/videos.html
 
 In the original video course (not YouTube), specification code will automatically appear below the video tutorial at the exact time Leslie references them and asks you to pause the video. 
 
-# Papers mentioned in the lectures
+## Papers mentioned in the lectures
 
 **Time, Clocks, and the Ordering of Events in a Distributed System (Lamport)**
 
@@ -43,5 +43,5 @@ http://www.altreonic.com/sites/default/files/An_Industrial_Case_Pitfalls_and_Ben
 
 https://lamport.azurewebsites.net/video/consensus-on-transaction-commit.pdf
 
-
-All copyrights remain with the original authors. 
+## Copyright
+All copyrights remain with the original authors.
