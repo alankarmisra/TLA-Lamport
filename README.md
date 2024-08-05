@@ -25,5 +25,23 @@ https://lamport.azurewebsites.net/video/videos.html
 
 In the original video course (not YouTube), specification code will automatically appear below the video tutorial at the exact time Leslie references them and asks you to pause the video. 
 
+# Papers mentioned in the lectures
+
+**Time, Clocks, and the Ordering of Events in a Distributed System (Lamport)**
+
+https://lamport.azurewebsites.net/pubs/time-clocks.pdf
+
+**How Amazon Web Services uses formal methods**
+
+https://assets.amazon.science/67/f9/92733d574c11ba1a11bd08bfb8ae/how-amazon-web-services-uses-formal-methods.pdf
+
+**An Industrial Case: Pitfalls and Benefits of Applying Formal Methods to the Development of a Network-Centric RTOS**
+
+http://www.altreonic.com/sites/default/files/An_Industrial_Case_Pitfalls_and_Benefits.pdf
+
+**Consensus on Transaction Commit**
+
+https://lamport.azurewebsites.net/video/consensus-on-transaction-commit.pdf
+
 
 All copyrights remain with the original authors. 
