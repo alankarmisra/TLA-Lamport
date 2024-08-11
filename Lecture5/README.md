@@ -1,38 +1,20 @@
 # Some thoughts and observations
 
-__Note:__ It's probably best to visit this README after you've been through the videos once. It uses concepts discussed in future lectures and attempts to clarify some things that remained unclear or needed further exploration at my end on review of the lectures.
+__Note:__ It's probably best to visit this README after you've been through the videos once. It uses concepts discussed in future lectures and attempts to clarify some things that remained unclear or needed further exploration at my end on a final review of the lectures.
 
 ## Enumeration of rmState
 The following syntax was a bit opaque to me at the onset:
-```python
+```tla
 TCTypeOK == rmState \in [RM -> {"working", "prepared", "committed", "aborted"}]
 ```
 
-First I simplified it to:
-```python
-States == {"working", "prepared", "committed", "aborted"}
-TCTypeOK == rmState \in [RM -> States]
+Coming from a programming background, the following equivalent statement seems clearer to me:
+```tla
+TCTypeOK == \A r \in RM : rmState[r] \in {"working", "prepared", "committed", "aborted"}
 ```
 
-So when Leslie says:
-> rmState is the set of all arrays indexed by RM
+I know they are equivalent because having replaced the former with the later, the model checker generates an equivalent number of states, invariants are honoured and the model checker does not raise any errors.
 
-I imagine something like 
-```python
-[
-  [
-    {"r1": "working"},
-    {"r2": "working"},
-    {"r3": "working"}
-  ],
-  [
-    {"r1": "prepared"},
-    {"r2": "working"},
-    {"r3": "working"}
-  ],
-  ...
-]
-```
 The total number of states can be calculated as follows:
 Each rm can be one of the 4 States. So for 3 resource managers, we have:
 
@@ -43,9 +25,8 @@ For s states we have __s^r__ states.
 
 Now I wanted to verify that my understanding was complementary to what TLA+ was doing. So I GPT'ed the following spec to check if TLA+ generated the same number of states. Note that for this to work, you have to ensure that *r1, r2, r3* are not symmetrical model values. Otherwise TLA+ will generate far fewer states. 
 
-```python
-States == {"working", "prepared", "committed", "aborted"}
-TCTypeOK == rmState \in [RM -> States]
+```tla
+TCTypeOK == \A r \in RM : rmState[r] \in {"working", "prepared", "committed", "aborted"}
 
 Init == rmState = [r \in RM |-> "working"]
 
@@ -60,12 +41,12 @@ The above spec generates the following states a total of 64 states as expected w
 
 
 ## Enumeration of TCInit
-```python
+```tla
 TCInit == rmState = [r \in RM |-> "working"]
 ```
 
 The set *[r \in RM |-> "working"]* enumerates to:
-```python
+```tla
 rmState = [
   {"r1" : "working"},
   {"r2" : "working"},
@@ -74,18 +55,18 @@ rmState = [
 ```
 
 Which then jives with Leslie's observation that
-```python
+```tla
 [r \in RM |-> "working"][rm] = "working"
 # for all rm in RM
 ```
 
 The syntax is
-```python
+```tla
 [variable \in set |-> expression]
 ```
 
 You could write this in python as
-```python
+```tla
 RM = ["r1", "r2", "r3"]
 rmState = {
     RM[0]: "working", # "r1"
