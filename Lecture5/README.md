@@ -13,7 +13,7 @@ Coming from a programming background, the following equivalent statement seems c
 TCTypeOK == \A r \in RM : rmState[r] \in {"working", "prepared", "committed", "aborted"}
 ```
 
-I know they are equivalent because having replaced the former with the later, the model checker generates an equivalent number of states, invariants are honoured and the model checker does not raise any errors.
+To check for equivalence, I replaced the former with the latter in the spec. Having run the model checker, an equivalent number of states are generated, invariants are honoured and no errors are raised.
 
 The total number of states can be calculated as follows:
 Each rm can be one of the 4 States. So for 3 resource managers, we have:
