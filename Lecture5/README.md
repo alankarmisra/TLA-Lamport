@@ -46,7 +46,7 @@ TCInit == rmState = [r \in RM |-> "working"]
 ```
 
 The set *[r \in RM |-> "working"]* enumerates to:
-```tla
+```python
 rmState = [
   {"r1" : "working"},
   {"r2" : "working"},
@@ -66,7 +66,7 @@ The syntax is
 ```
 
 You could write this in python as
-```tla
+```python
 RM = ["r1", "r2", "r3"]
 rmState = {
     RM[0]: "working", # "r1"
