@@ -2,7 +2,7 @@
 TLC2 Version 2.16 of 31 December 2020 (rev: cdddf55)
 @!@!@ENDMSG 2262 @!@!@
 @!@!@STARTMSG 2187:0 @!@!@
-Running breadth-first search Model-Checking with fp 123 and seed 7236918437906980782 with 4 workers on 8 cores with 1214MB heap and 2730MB offheap memory [pid: 32368] (Mac OS X 10.16 x86_64, AdoptOpenJDK 14.0.1 x86_64, OffHeapDiskFPSet, DiskStateQueue).
+Running breadth-first search Model-Checking with fp 70 and seed -4926063707387363750 with 4 workers on 8 cores with 1214MB heap and 2730MB offheap memory [pid: 24456] (Mac OS X 10.16 x86_64, AdoptOpenJDK 14.0.1 x86_64, OffHeapDiskFPSet, DiskStateQueue).
 @!@!@ENDMSG 2187 @!@!@
 @!@!@STARTMSG 2220:0 @!@!@
 Starting SANY...
@@ -27,26 +27,26 @@ Semantic processing of module MC
 SANY finished.
 @!@!@ENDMSG 2219 @!@!@
 @!@!@STARTMSG 2185:0 @!@!@
-Starting... (2024-08-07 14:35:08)
+Starting... (2024-08-15 18:23:15)
 @!@!@ENDMSG 2185 @!@!@
 @!@!@STARTMSG 2189:0 @!@!@
 Computing initial states...
 @!@!@ENDMSG 2189 @!@!@
 @!@!@STARTMSG 2190:0 @!@!@
-Finished computing initial states: 1 distinct state generated at 2024-08-07 14:35:09.
+Finished computing initial states: 1 distinct state generated at 2024-08-15 18:23:16.
 @!@!@ENDMSG 2190 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(14) at 2024-08-07 14:35:12: 132,177 states generated (132,177 s/min), 18,996 distinct states found (18,996 ds/min), 7,254 states left on queue.
+Progress(14) at 2024-08-15 18:23:19: 111,317 states generated (111,317 s/min), 15,993 distinct states found (15,993 ds/min), 6,105 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2193:0 @!@!@
 Model checking completed. No error has been found.
   Estimates of the probability that TLC did not check all reachable states
   because two distinct states had the same fingerprint:
   calculated (optimistic):  val = 9.3E-9
-  based on the actual fingerprints:  val = 6.1E-9
+  based on the actual fingerprints:  val = 5.2E-9
 @!@!@ENDMSG 2193 @!@!@
 @!@!@STARTMSG 2201:0 @!@!@
-The coverage statistics at 2024-08-07 14:35:30
+The coverage statistics at 2024-08-15 18:23:36
 @!@!@ENDMSG 2201 @!@!@
 @!@!@STARTMSG 2773:0 @!@!@
 <PCInit line 97, col 1 to line 97, col 6 of module PaxosCommit>: 1:1
@@ -91,7 +91,7 @@ The coverage statistics at 2024-08-07 14:35:30
   line 134, col 6 to line 134, col 21 of module PaxosCommit: 10850
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2772:0 @!@!@
-<RMRcvCommitMsg line 136, col 1 to line 136, col 17 of module PaxosCommit>: 2226:28538
+<RMRcvCommitMsg line 136, col 1 to line 136, col 17 of module PaxosCommit>: 2295:28538
 @!@!@ENDMSG 2772 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
   line 143, col 6 to line 143, col 33 of module PaxosCommit: 268522
@@ -109,7 +109,7 @@ The coverage statistics at 2024-08-07 14:35:30
   line 145, col 6 to line 145, col 31 of module PaxosCommit: 28538
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2772:0 @!@!@
-<RMRcvAbortMsg line 147, col 1 to line 147, col 16 of module PaxosCommit>: 5541:116788
+<RMRcvAbortMsg line 147, col 1 to line 147, col 16 of module PaxosCommit>: 5164:116788
 @!@!@ENDMSG 2772 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
   line 152, col 6 to line 152, col 32 of module PaxosCommit: 356772
@@ -127,7 +127,7 @@ The coverage statistics at 2024-08-07 14:35:30
   line 154, col 6 to line 154, col 31 of module PaxosCommit: 116788
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2772:0 @!@!@
-<Phase1a line 164, col 1 to line 164, col 15 of module PaxosCommit>: 17:239984
+<Phase1a line 164, col 1 to line 164, col 15 of module PaxosCommit>: 21:239984
 @!@!@ENDMSG 2772 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
   line 171, col 6 to line 171, col 55 of module PaxosCommit: 239984
@@ -136,7 +136,7 @@ The coverage statistics at 2024-08-07 14:35:30
   line 172, col 6 to line 172, col 34 of module PaxosCommit: 239984
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2772:0 @!@!@
-<Phase2a line 174, col 1 to line 174, col 15 of module PaxosCommit>: 3466:32550
+<Phase2a line 174, col 1 to line 174, col 15 of module PaxosCommit>: 3713:32550
 @!@!@ENDMSG 2772 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
   line 191, col 6 to line 193, col 34 of module PaxosCommit: 260800
@@ -145,13 +145,13 @@ The coverage statistics at 2024-08-07 14:35:30
   |line 191, col 7 to line 193, col 34 of module PaxosCommit: 239984
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  ||line 191, col 23 to line 193, col 34 of module PaxosCommit: 1650448
+  ||line 191, col 23 to line 193, col 34 of module PaxosCommit: 1650296
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |||line 191, col 26 to line 191, col 43 of module PaxosCommit: 1650448
+  |||line 191, col 26 to line 191, col 43 of module PaxosCommit: 1650296
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |||line 192, col 26 to line 192, col 36 of module PaxosCommit: 666630
+  |||line 192, col 26 to line 192, col 36 of module PaxosCommit: 666478
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
   |||line 193, col 26 to line 193, col 34 of module PaxosCommit: 307710
@@ -160,37 +160,37 @@ The coverage statistics at 2024-08-07 14:35:30
   ||line 191, col 16 to line 191, col 19 of module PaxosCommit: 239984
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 203, col 47 to line 203, col 56 of module PaxosCommit: 302245
+  line 203, col 47 to line 203, col 56 of module PaxosCommit: 301658
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 203, col 47 to line 203, col 51 of module PaxosCommit: 237145
+  |line 203, col 47 to line 203, col 51 of module PaxosCommit: 236558
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 203, col 55 to line 203, col 56 of module PaxosCommit: 237145
+  |line 203, col 55 to line 203, col 56 of module PaxosCommit: 236558
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 203, col 40 to line 203, col 43 of module PaxosCommit: 222196
+  line 203, col 40 to line 203, col 43 of module PaxosCommit: 221609
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2775:0 @!@!@
-  |line 195, col 21 to line 198, col 51 of module PaxosCommit: 222196:459341
+  |line 195, col 21 to line 198, col 51 of module PaxosCommit: 221609:458167
 @!@!@ENDMSG 2775 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  ||line 195, col 35 to line 198, col 50 of module PaxosCommit: 2915700
+  ||line 195, col 35 to line 198, col 50 of module PaxosCommit: 2906847
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |||line 195, col 38 to line 195, col 55 of module PaxosCommit: 2915700
+  |||line 195, col 38 to line 195, col 55 of module PaxosCommit: 2906847
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |||line 196, col 38 to line 196, col 47 of module PaxosCommit: 809804
+  |||line 196, col 38 to line 196, col 47 of module PaxosCommit: 807244
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |||line 197, col 38 to line 197, col 49 of module PaxosCommit: 340611
+  |||line 197, col 38 to line 197, col 49 of module PaxosCommit: 339667
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |||line 198, col 38 to line 198, col 50 of module PaxosCommit: 340611
+  |||line 198, col 38 to line 198, col 50 of module PaxosCommit: 339667
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  ||line 195, col 28 to line 195, col 31 of module PaxosCommit: 222196
+  ||line 195, col 28 to line 195, col 31 of module PaxosCommit: 221609
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
   line 203, col 26 to line 203, col 27 of module PaxosCommit: 142497
@@ -376,28 +376,28 @@ The coverage statistics at 2024-08-07 14:35:30
   line 205, col 6 to line 205, col 34 of module PaxosCommit: 32550
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2772:0 @!@!@
-<PCDecide line 207, col 1 to line 207, col 8 of module PaxosCommit>: 5298:268958
+<PCDecide line 207, col 1 to line 207, col 8 of module PaxosCommit>: 5327:268958
 @!@!@ENDMSG 2772 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 219, col 29 to line 220, col 73 of module PaxosCommit: 1386894
+  line 219, col 29 to line 220, col 73 of module PaxosCommit: 1393304
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 219, col 29 to line 220, col 64 of module PaxosCommit: 1173440
+  |line 219, col 29 to line 220, col 64 of module PaxosCommit: 1179590
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 220, col 70 to line 220, col 73 of module PaxosCommit: 1173440
+  |line 220, col 70 to line 220, col 73 of module PaxosCommit: 1179590
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 219, col 24 to line 219, col 25 of module PaxosCommit: 979788
+  line 219, col 24 to line 219, col 25 of module PaxosCommit: 984348
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 218, col 21 to line 218, col 26 of module PaxosCommit: 163298
+  line 218, col 21 to line 218, col 26 of module PaxosCommit: 164058
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 218, col 36 to line 218, col 43 of module PaxosCommit: 163298
+  line 218, col 36 to line 218, col 43 of module PaxosCommit: 164058
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 221, col 38 to line 221, col 38 of module PaxosCommit: 163298
+  line 221, col 38 to line 221, col 38 of module PaxosCommit: 164058
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
   line 221, col 25 to line 221, col 26 of module PaxosCommit: 119992
@@ -406,13 +406,13 @@ The coverage statistics at 2024-08-07 14:35:30
   line 222, col 16 to line 222, col 40 of module PaxosCommit: 73206
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 219, col 29 to line 220, col 73 of module PaxosCommit: 2171722
+  line 219, col 29 to line 220, col 73 of module PaxosCommit: 2169791
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 219, col 29 to line 220, col 64 of module PaxosCommit: 1780218
+  |line 219, col 29 to line 220, col 64 of module PaxosCommit: 1778287
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 220, col 70 to line 220, col 73 of module PaxosCommit: 1780218
+  |line 220, col 70 to line 220, col 73 of module PaxosCommit: 1778287
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
   line 219, col 24 to line 219, col 25 of module PaxosCommit: 1439904
@@ -436,7 +436,7 @@ The coverage statistics at 2024-08-07 14:35:30
   line 225, col 6 to line 225, col 34 of module PaxosCommit: 268958
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2772:0 @!@!@
-<Phase1b line 230, col 1 to line 230, col 12 of module PaxosCommit>: 19146:125081
+<Phase1b line 230, col 1 to line 230, col 12 of module PaxosCommit>: 19007:125081
 @!@!@ENDMSG 2772 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
   line 232, col 8 to line 232, col 25 of module PaxosCommit: 5793752
@@ -466,7 +466,7 @@ The coverage statistics at 2024-08-07 14:35:30
   line 231, col 12 to line 231, col 15 of module PaxosCommit: 359976
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2772:0 @!@!@
-<Phase2b line 243, col 1 to line 243, col 12 of module PaxosCommit>: 84292:711509
+<Phase2b line 243, col 1 to line 243, col 12 of module PaxosCommit>: 84459:711509
 @!@!@ENDMSG 2772 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
   line 245, col 11 to line 245, col 28 of module PaxosCommit: 6380180
@@ -505,10 +505,10 @@ The coverage statistics at 2024-08-07 14:35:30
 <TCConsistent line 281, col 1 to line 281, col 16 of module PaxosCommit>
 @!@!@ENDMSG 2774 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 281, col 1 to line 281, col 16 of module PaxosCommit: 119992
+  line 281, col 1 to line 281, col 16 of module PaxosCommit: 1665101
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 281, col 1 to line 281, col 16 of module PaxosCommit: 119992
+  line 281, col 1 to line 281, col 16 of module PaxosCommit: 4904605
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
   line 67, col 3 to line 68, col 51 of module TCommit: 119992
@@ -532,7 +532,7 @@ The coverage statistics at 2024-08-07 14:35:30
 End of statistics.
 @!@!@ENDMSG 2202 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(28) at 2024-08-07 14:35:30: 1,545,109 states generated (3,967,413 s/min), 119,992 distinct states found (308,106 ds/min), 0 states left on queue.
+Progress(28) at 2024-08-15 18:23:36: 1,545,109 states generated (4,162,096 s/min), 119,992 distinct states found (323,225 ds/min), 0 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2199:0 @!@!@
 1545109 states generated, 119992 distinct states found, 0 states left on queue.
@@ -541,8 +541,8 @@ Progress(28) at 2024-08-07 14:35:30: 1,545,109 states generated (3,967,413 s/min
 The depth of the complete state graph search is 28.
 @!@!@ENDMSG 2194 @!@!@
 @!@!@STARTMSG 2268:0 @!@!@
-The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 10 and the 95th percentile is 3).
+The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 9 and the 95th percentile is 3).
 @!@!@ENDMSG 2268 @!@!@
 @!@!@STARTMSG 2186:0 @!@!@
-Finished in 23377ms at (2024-08-07 14:35:31)
+Finished in 22284ms at (2024-08-15 18:23:36)
 @!@!@ENDMSG 2186 @!@!@
